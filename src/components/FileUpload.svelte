@@ -20,12 +20,25 @@
         getPDFMetadata(file)
       ]);
 
+      console.log('PDF processed:', {
+        fileName: file.name,
+        textLength: text?.length,
+        metadata
+      });
+
       processingProgress = 50;
 
       // Process the document: chunk and vectorize
       const { vectors, metadata: chunkMetadata } = await processDocument(text, {
         ...metadata,
         fileName: file.name
+      });
+
+      console.log('Document processed:', {
+        fileName: file.name,
+        vectorsCount: vectors?.length,
+        chunksCount: chunkMetadata?.length,
+        firstChunkText: chunkMetadata?.[0]?.text?.substring(0, 50) + '...'
       });
 
       processingProgress = 100;
