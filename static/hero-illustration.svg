@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="400" rx="8" fill="#F8FAFC"/>
+  
+  <!-- Search Bar -->
+  <rect x="100" y="50" width="600" height="60" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  <circle cx="130" cy="80" r="15" fill="#3B82F6"/>
+  <path d="M125 80L135 80M130 75L130 85" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Document List -->
+  <rect x="100" y="130" width="600" height="240" rx="8" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+  
+  <!-- Document Items -->
+  <rect x="120" y="150" width="560" height="40" rx="4" fill="#F1F5F9"/>
+  <rect x="120" y="200" width="560" height="40" rx="4" fill="#F1F5F9"/>
+  <rect x="120" y="250" width="560" height="40" rx="4" fill="#F1F5F9"/>
+  <rect x="120" y="300" width="560" height="40" rx="4" fill="#F1F5F9"/>
+  
+  <!-- Document Icons -->
+  <rect x="130" y="160" width="20" height="20" rx="2" fill="#3B82F6"/>
+  <rect x="130" y="210" width="20" height="20" rx="2" fill="#3B82F6"/>
+  <rect x="130" y="260" width="20" height="20" rx="2" fill="#3B82F6"/>
+  <rect x="130" y="310" width="20" height="20" rx="2" fill="#3B82F6"/>
+  
+  <!-- Document Names -->
+  <rect x="160" y="165" width="200" height="10" rx="2" fill="#94A3B8"/>
+  <rect x="160" y="215" width="200" height="10" rx="2" fill="#94A3B8"/>
+  <rect x="160" y="265" width="200" height="10" rx="2" fill="#94A3B8"/>
+  <rect x="160" y="315" width="200" height="10" rx="2" fill="#94A3B8"/>
+</svg> 

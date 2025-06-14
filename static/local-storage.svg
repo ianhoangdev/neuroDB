@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" rx="8" fill="#F5F3FF"/>
+  
+  <!-- Browser Window -->
+  <rect x="50" y="30" width="300" height="140" rx="4" fill="white" stroke="#8B5CF6" stroke-width="2"/>
+  
+  <!-- Browser Header -->
+  <rect x="50" y="30" width="300" height="20" rx="4" fill="#8B5CF6"/>
+  <circle cx="65" cy="40" r="4" fill="white"/>
+  <circle cx="80" cy="40" r="4" fill="white"/>
+  <circle cx="95" cy="40" r="4" fill="white"/>
+  
+  <!-- Lock Icon -->
+  <rect x="180" y="70" width="40" height="30" rx="4" fill="#8B5CF6"/>
+  <rect x="190" y="60" width="20" height="10" rx="2" fill="#8B5CF6"/>
+  <circle cx="200" cy="85" r="8" fill="white"/>
+  <rect x="195" y="85" width="10" height="15" fill="white"/>
+  
+  <!-- Storage Indicator -->
+  <rect x="150" y="120" width="100" height="10" rx="5" fill="#DDD6FE"/>
+  <rect x="150" y="120" width="60" height="10" rx="5" fill="#8B5CF6"/>
+</svg> 

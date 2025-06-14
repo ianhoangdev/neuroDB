@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="200" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="200" rx="8" fill="#EFF6FF"/>
+  
+  <!-- Search Icon -->
+  <circle cx="100" cy="100" r="40" fill="#3B82F6"/>
+  <path d="M85 100L115 100M100 85L100 115" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Connection Lines -->
+  <path d="M140 100L160 100" stroke="#3B82F6" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Document -->
+  <rect x="180" y="60" width="120" height="80" rx="4" fill="white" stroke="#3B82F6" stroke-width="2"/>
+  <rect x="190" y="75" width="100" height="10" rx="2" fill="#E2E8F0"/>
+  <rect x="190" y="95" width="80" height="10" rx="2" fill="#E2E8F0"/>
+  <rect x="190" y="115" width="90" height="10" rx="2" fill="#E2E8F0"/>
+</svg> 

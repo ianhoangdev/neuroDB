@@ -173,7 +173,7 @@
           <p class="mt-5 max-w-xl mx-auto text-xl text-gray-500 mb-8">
             Upload PDFs, extract text, and search through your documents using semantic search.
           </p>
-          <div class="flex justify-center space-x-4">
+          <div class="flex justify-center space-x-4 mb-12">
             <button
               class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200"
               on:click={() => (activeTab = 'upload')}
@@ -201,6 +201,20 @@
               </svg>
               Documentation
             </a>
+          </div>
+          <!-- Hero Image -->
+          <div class="relative max-w-4xl mx-auto">
+            <img
+              src="/hero-illustration.svg"
+              alt="NeuroDB Interface Preview"
+              class="w-full h-auto rounded-lg shadow-xl"
+            />
+            <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg">
+              <div class="flex items-center space-x-2">
+                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                <span class="text-sm text-gray-600">Processing Complete</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -245,7 +259,7 @@
     </div>
 
     <!-- Features Section -->
-    <div id="features" class="bg-white py-16 {showFeatures ? 'opacity-100' : 'opacity-0'} transition-opacity duration-1000">
+    <div id="features" class="bg-white py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">
           <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-12">
@@ -262,9 +276,14 @@
               </svg>
             </div>
             <h3 class="text-lg font-medium text-gray-900 mb-2">Semantic Search</h3>
-            <p class="text-gray-500">
+            <p class="text-gray-500 mb-4">
               Search through your documents using natural language queries. Find relevant content even when the exact words don't match.
             </p>
+            <img
+              src="/semantic-search.svg"
+              alt="Semantic Search Illustration"
+              class="w-full h-48 object-cover rounded-lg"
+            />
           </div>
 
           <!-- PDF Processing -->
@@ -275,9 +294,14 @@
               </svg>
             </div>
             <h3 class="text-lg font-medium text-gray-900 mb-2">PDF Processing</h3>
-            <p class="text-gray-500">
+            <p class="text-gray-500 mb-4">
               Extract text and metadata from PDF files automatically. Process multiple pages and maintain document structure.
             </p>
+            <img
+              src="/pdf-processing.svg"
+              alt="PDF Processing Illustration"
+              class="w-full h-48 object-cover rounded-lg"
+            />
           </div>
 
           <!-- Local Storage -->
@@ -288,9 +312,30 @@
               </svg>
             </div>
             <h3 class="text-lg font-medium text-gray-900 mb-2">Local Storage</h3>
-            <p class="text-gray-500">
+            <p class="text-gray-500 mb-4">
               All data is stored locally in your browser for privacy. Your documents never leave your device.
             </p>
+            <img
+              src="/local-storage.svg"
+              alt="Local Storage Illustration"
+              class="w-full h-48 object-cover rounded-lg"
+            />
+          </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
+          <div class="bg-blue-50 rounded-lg p-6 text-center">
+            <div class="text-4xl font-bold text-blue-600 mb-2">90%</div>
+            <div class="text-gray-600">Faster Search</div>
+          </div>
+          <div class="bg-green-50 rounded-lg p-6 text-center">
+            <div class="text-4xl font-bold text-green-600 mb-2">100%</div>
+            <div class="text-gray-600">Privacy Guaranteed</div>
+          </div>
+          <div class="bg-purple-50 rounded-lg p-6 text-center">
+            <div class="text-4xl font-bold text-purple-600 mb-2">30%</div>
+            <div class="text-gray-600">More Accurate Results</div>
           </div>
         </div>
       </div>

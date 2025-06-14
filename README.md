@@ -16,7 +16,7 @@ A modern, privacy-focused document management system that uses semantic search t
 - TailwindCSS for styling
 - IndexedDB for local storage
 - PDF.js for PDF processing
-- TensorFlow.js for semantic search
+- Hugging Face Transformers for semantic search
 
 ## Getting Started
 
@@ -75,10 +75,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- [SvelteKit](https://kit.svelte.dev/)
-- [TailwindCSS](https://tailwindcss.com/)
-- [PDF.js](https://mozilla.github.io/pdf.js/)
-- [TensorFlow.js](https://www.tensorflow.org/js)
