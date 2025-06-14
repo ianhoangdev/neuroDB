@@ -6,10 +6,10 @@
   export let searchResults = [];
   export let isSearching = false;
 
-  const ITEMS_PER_PAGE = 5;
+  const ITEMS_PER_PAGE = 6; // 6 items per page * 5 pages = 30 max results
   let currentPage = 1;
 
-  $: totalPages = Math.ceil((searchResults.length || files.length) / ITEMS_PER_PAGE);
+  $: totalPages = Math.min(Math.ceil(Math.min(searchResults.length || files.length, 30) / ITEMS_PER_PAGE), 5);
   $: startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   $: endIndex = startIndex + ITEMS_PER_PAGE;
   $: displayedItems = searchResults.length > 0 

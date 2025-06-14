@@ -216,6 +216,8 @@ export async function searchSimilar(queryVector) {
   const db = await initDB();
   const tx = db.transaction(EMBEDDINGS_STORE, 'readonly');
   const store = tx.objectStore(EMBEDDINGS_STORE);
+  const SIMILARITY_THRESHOLD = 0.1; // 10% similarity threshold
+  const MAX_RESULTS = 30;
 
   return new Promise((resolve, reject) => {
     const request = store.getAll();
@@ -241,7 +243,9 @@ export async function searchSimilar(queryVector) {
           similarity: cosineSimilarity(queryVector, embedding.vector),
           fileName: embedding.metadata.fileName
         }))
-        .sort((a, b) => b.similarity - a.similarity);
+        .filter(result => result.similarity >= SIMILARITY_THRESHOLD)
+        .sort((a, b) => b.similarity - a.similarity)
+        .slice(0, MAX_RESULTS);
 
       console.log('Returning search results:', results.length);
       console.log('First result sample:', results[0] || 'No results');

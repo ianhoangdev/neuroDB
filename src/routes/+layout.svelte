@@ -33,7 +33,7 @@
   </header>
 
   <!-- Main Content -->
-  <main class="flex-grow pt-20">
+  <main class="flex-grow pt-1">
     <slot />
   </main>
 
